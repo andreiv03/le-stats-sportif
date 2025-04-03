@@ -16,6 +16,3 @@ install: enforce_venv requirements.txt
 
 run_server: enforce_venv
 	flask run --host=0.0.0.0 --port=5000
-
-run_tests: enforce_venv
-	python checker/checker.py
