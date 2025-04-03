@@ -31,7 +31,7 @@ def graceful_shutdown_request():
 
     logger = current_app.logger
     logger.info(
-        "Graceful shutdown initiated. Running tasks: %s",
+        'Graceful shutdown initiated. Running tasks: "%s"',
         any_active,
     )
 
