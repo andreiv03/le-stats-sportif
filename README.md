@@ -36,8 +36,11 @@ Follow these steps to clone, build, and run the server:
 git clone https://github.com/andreiv03/le-stats-sportif.git
 cd le-stats-sportif
 
+# Create virtual environment
+make create_venv
+
 # Install dependencies
-pip install -r requirements.txt
+make install
 
 # Run the server
 make run_server
