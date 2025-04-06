@@ -18,6 +18,7 @@ from .graceful_shutdown import graceful_shutdown_bp
 from .jobs import jobs_bp
 from .num_jobs import num_jobs_bp
 from .get_results import get_results_bp
+from .restart import restart_bp
 
 
 def register_blueprints(app):
@@ -43,6 +44,7 @@ def register_blueprints(app):
         jobs_bp,
         num_jobs_bp,
         get_results_bp,
+        restart_bp,
     ]
 
     for blueprint in blueprints:

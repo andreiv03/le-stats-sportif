@@ -9,6 +9,7 @@ import json
 import os
 from json import JSONDecodeError
 from flask import Blueprint, current_app, jsonify
+
 from app.utils import extract_job_id
 
 get_results_bp = Blueprint("get_results", __name__)
